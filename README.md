@@ -4,12 +4,12 @@ Powershell script to automate the copying of objects between sql server always o
 Prerequisites:
 * Central Management Server with availability group listener names stored in one folder
 * DBATools.io powershell module installed
-* User running process will need domain admin on the sql server machines and SA in the database instances
+* User running process will need local admin on the sql server machines and SA permisssions in the database instances
 
 Notes: 
 * Script will dynamically determine which node is primary of each AG and which node(s) are secondary
 * Sync-DbaAvailabilityGroup is the base command for the sync
-* I have this script setup to ignore the DBMail and specific logins upon sync
+* I have this script setup to ignore the DBMail and specific logins
 * This will drop and recreate all jobs on secondaries
 
 Links:
